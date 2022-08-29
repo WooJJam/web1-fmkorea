@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="kr">
+
+<head>
+    <style>
+        * {
+            list-style: none;
+            text-decoration: none;
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0px;
+        }
+        #wrap {
+            width: 1050px;
+            margin: 0 auto;
+    
+        }
+        
+        .wrapper{
+            position: relative;
+        }
+
+        .top {
+            margin-top: 3px;
+            font-size: 12px;
+            display: flex;
+        }
+
+        .top p {
+            margin-right: 200px;
+        }
+
+        .top input {
+            width: 92px;
+            height: 18px;
+        }
+
+        .top::before {
+            position: absolute;
+            width: 100%;
+            height: 27px;
+            background: #f9f9f9;
+            border-bottom: 2px solid #ddd;
+            left: 0;
+            top: 0;
+            content: "";
+            z-index: -1;
+        }
+
+        .middle div {
+            display: flex;
+        }
+
+        .middle .middle_logo>input {
+            position: relative;
+            top: 30px;
+            left: 400px
+        }
+
+        #search_bar {
+            width: 200px;
+            height: 24px;
+            margin-left: 15px;
+            border: 3px solid #1c6ec9;
+        }
+
+        #search_btn {
+            width: 50px;
+            height: 30px;
+            margin-left: 10px;
+            border: 1px solid #ccc;
+            background-color: white;
+            border-radius: 5px;
+        }
+        
+        #article {
+            position: relative;
+            left:
+        }
+        #banner {
+            height: 35px;
+            background: url(img/banner.png) no-repeat;
+            padding: 0 0 0 15px;
+            font-size: 13px;
+        }
+
+        header>ul>li {
+            float: left;
+        }
+
+        .banner_btn {
+            border-right: 1px solid white;
+            padding: 8px;
+            color: white;
+        }
+
+        .banner_btn2 {
+            border-right: 1px solid white;
+            padding: 8px;
+            color: white;
+            position: relative;
+            left: 210px;
+        }
+
+        .article_ad {
+            margin: 10px;
+            font-size: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #main_ad {
+            margin-top: 10px;
+        }
+
+        .content {
+            width: 860px;
+        }
+
+        .content_ad {
+            color: #555;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        .blackbar {
+            display: block;
+            background-color: black;
+            position: relative;
+            width: 12px;
+            height: 22px;
+            border-radius: 2px;
+            top: 13px;
+        }
+
+        .board {
+            position: relative;
+            left: 20px;
+            top: -15px;
+        }
+
+        .board_bar {
+            height: 30px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .board_in_box {
+            display: flex;
+            border-right: 1px solid #ddd;
+            width: 30px;
+            justify-content: center;
+            margin: 4px;
+            font-size: 14px;
+        }
+
+        .board_bar ul>li {
+            float: left;
+        }
+
+        .board_bar_list {
+            position: relative;
+            display: flex;
+            left: 43px;
+            top: -25px;
+            font-size: 14px;
+            width: 30px;
+            margin: 4px;
+            justify-content: center;
+            padding: 0 0 5px 6px
+        }
+
+        .right_bar {}
+
+        .ad_bar {}
+
+        .footer_search_bar {
+            position: absolute;
+            line-height: 2;
+        }
+
+        #footer_search_btn {
+            width: 130px;
+            height: 20px;
+            font-size: 10px;
+            margin-right: 7px;
+        }
+
+        #select_btn {
+            height: 22px;
+        }
+
+        .footer {
+            padding: 5px;
+        }
+
+        .footer_list nav>ul>li {
+            float: left;
+        }
+
+        .footer_list {
+            width: 860px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer_list_btn {
+            margin: 4px;
+            padding: 4px;
+            border: 1px solid #DCDCDC;
+            background-color: #FFFAFA
+        }
+        
+        .line{
+            border-top: 1px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="middle">
+                <div class="top">
+                    <p>에펨코리아 - 유머,축구,게임,풋볼매니저 종합 커뮤니티</p>
+                    <span>회원 가입 |</span>
+                    <span>&ensp;비번 찾기 |</span>
+                    <span>&ensp; 인증 메일 재발송 |</span>
+                    <span>&ensp; 다크OFF |&ensp;</span>
+                    <input type="text" placeholder="아이디" style="width: 92px">
+                    <input type="password" placeholder="비밀번호" style="width: 92px; margin-left: 10px;">
+                </div>
+                <div class="middle_logo"> <a href="https://www.fmkorea.com/"><img class="logo" src="img/logo.png" alt="로고"></a>
+                    <input id="search_bar" type="text" placeholder="게시판 & 통합검색">
+                    <input id="search_btn" type="submit" value="검색">
+                </div>
+            </div>
+            <ul id="banner">
+                <li class="banner_btn">포텐터짐</li>
+                <li class="banner_btn">유머/정보</li>
+                <li class="banner_btn">스포츠</li>
+                <li class="banner_btn">쇼핑/투자</li>
+                <li class="banner_btn">일반</li>
+                <li class="banner_btn">게임</li>
+                <li class="banner_btn">커뮤니티</li>
+                <li class="banner_btn">갤러리</li>
+                <li class="banner_btn">풋볼매니저</li>
+                <li class="banner_btn">피파</li>
+                <li class="banner_btn">2군</li>
+                <li class="banner_btn2">전체 게시물</li>
+                <li class="banner_btn2">바로가기</li>
+            </ul>
+        </header>
+
+        <article>
+            <div class="wrapper">
+                    <div class="content">
+                        <div class="article_ad">
+                            <span>파워링크[광고]</span>
+                            <span>등록하기</span>
+                            
+                        </div>
+                        <div id="main_ad">
+                            <span><a href="https://google.com">구글</a></span>
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                            <span style="font-size: 13px;">https://google.com</span>
+                            <h6><a class="content_ad2" href="https://www.yu.ac.kr/">여기가 구글인데 여기가 구글인데여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데  여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가  </a></h6>
+                        </div>
+                        <div id="main_ad">
+                            <span><a href="https://naver.com">네이버</a></span>
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                            <span style="font-size: 13px;">https://naver.com</span>
+                            <h6><a class="content_ad2" href="https://yu.ac.kr/">ㅋㅋ 여기는 네이버인데요. ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.</a></h6>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="blackbar"></i>
+                        <h1 class="board">부랄 터진 게시판</h1>
+                    </div>
+
+                    <div class="board_bar">
+                        <span class="board_in_box"><a href="https://www.fmkorea.com/best" style="color: black;">홈</a></span>
+                        <ul>
+                            <li class="board_bar_list"><a href="https://www.fmkorea.com/best" style="color: black;">최신</a></li>
+                            <li class="board_bar_list"><a href="https://www.fmkorea.com/best2" style="color: black;">화제</a></li>
+                            <li class="board_bar_list"><a href="https://www.fmkorea.com/index.php?mid=politics&sort_index=pop&order_type=desc" style="color: black;">정치</a></li>
+                        </ul>
+                    </div>
+
+                <!--
+                <div class="right_bar">
+
+                </div>
+
+                <div class="ad_bar">
+
+                </div>
+-->
+            </div>
+        </article>
+        <footer>
+            <div class="footer">
+                <div class="footer_search_bar">
+                  시발 존나 피곤해 개씨발 <br>
+                  생각보다 존나 어렵네 시발 <br>
+                  새벽 5시반에 이지랄하고있네 개시발 <br>
+                  씨발 개시발 존나 피곤해 씨발 개시발 <br>
+                  거의 다만들었다 씨발 <br>
+                  광고 창만 만들면 되는데 모르겠노 시발 <br>
+                  잔다 bye
+                   
+                    <div class="line">
+                        <input id="footer_search_btn" type="text">
+                        <select id="select_btn" name="color">
+                            <option value="title">제목+내용</option>
+                            <option value="black">제목</option>
+                            <option value="blue">내용</option>
+                            <option value="blue">댓글</option>
+                            <option value="blue">닉네임</option>
+                        </select>
+                    </div>
+                    <div class="footer_list">
+                        <nav>
+                            <ul>
+                                <li class="footer_list_btn">이전</li>
+                                <li class="footer_list_btn">1</li>
+                                <li class="footer_list_btn">2</li>
+                                <li class="footer_list_btn">3</li>
+                                <li class="footer_list_btn">4</li>
+                                <li class="footer_list_btn">5</li>
+                                <li class="footer_list_btn">6</li>
+                                <li class="footer_list_btn">7</li>
+                                <li class="footer_list_btn">8</li>
+                                <li class="footer_list_btn">9</li>
+                                <li class="footer_list_btn">10</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
