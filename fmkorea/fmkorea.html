@@ -2,6 +2,10 @@
 <html lang="kr">
 
 <head>
+  <meta charset="utf-8"> 
+   <title>
+       우재민의 코리아
+   </title>
     <style>
         * {
             list-style: none;
@@ -27,12 +31,26 @@
         }
 
         .top p {
-            margin-right: 200px;
+            margin-right: 120px;
+        }
+        
+        .loginbox {
+            width: 80px;
+            height: 18px;
         }
 
-        .top input {
-            width: 92px;
-            height: 18px;
+        .checkbox {
+            width: 13px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        
+        .button {
+            width:50px;
+            background: #fff;
+            border-radius: 7px;
+            font-size: 12px;
+            border: 1px solid gray;
         }
 
         .top::before {
@@ -117,10 +135,10 @@
             width: 860px;
         }
 
-        .content_ad {
-            color: #555;
+        .content_ad2 {
+            color: blue;
             line-height: 1.7;
-            font-size: 14px;
+            font-size: 12px;
         }
 
         .blackbar {
@@ -141,6 +159,7 @@
 
         .board_bar {
             height: 30px;
+            width: 870px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
@@ -169,10 +188,6 @@
             justify-content: center;
             padding: 0 0 5px 6px
         }
-
-        .right_bar {}
-
-        .ad_bar {}
 
         .footer_search_bar {
             position: absolute;
@@ -211,8 +226,49 @@
             background-color: #FFFAFA
         }
         
+        .contentpic{
+            width:11%;
+            margin-bottom: -3px;
+            margin-left: -10px;
+        }
+        
+        .contentuppic{
+            margin-left: -6px;
+            margin-right: 10px;
+        }
+        
+        .feed {
+            position: relative;
+            top:-46px;
+            font-size: 19px;
+            color:blue;
+            font-style: oblique;
+        }
+        .contenttype{
+            position: relative;
+            left:-400px;
+            top:-24px;
+            font-size: 13px;
+            color: blue;
+            font-family: fantasy;
+        }
+        .writer{
+            position: relative;
+            left: -466px;
+            font-size: 13px;
+            font-family: fantasy;
+        }
         .line{
             border-top: 1px solid green;
+        }
+        
+        .sidebanner{
+            font-size: 12px;
+            width:190px;
+            display: flex;
+            position: absolute;
+            left: 890px;
+            top: 0px;
         }
     </style>
 </head>
@@ -227,8 +283,11 @@
                     <span>&ensp;비번 찾기 |</span>
                     <span>&ensp; 인증 메일 재발송 |</span>
                     <span>&ensp; 다크OFF |&ensp;</span>
-                    <input type="text" placeholder="아이디" style="width: 92px">
-                    <input type="password" placeholder="비밀번호" style="width: 92px; margin-left: 10px;">
+                    <input type="text" class="loginbox" placeholder="아이디">
+                    <input type="password" class="loginbox" placeholder="비밀번호" style="margin-left: 10px;">
+                    <input type="checkbox" class="checkbox">
+                    <span style="margin-top: 3px; margin-right: 4px;"> 자동 로그인</span>
+                    <input type="button" class="button" value="로그인">
                 </div>
                 <div class="middle_logo"> <a href="https://www.fmkorea.com/"><img class="logo" src="img/logo.png" alt="로고"></a>
                     <input id="search_bar" type="text" placeholder="게시판 & 통합검색">
@@ -264,14 +323,17 @@
                             <span><a href="https://google.com">구글</a></span>
                             &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                             <span style="font-size: 13px;">https://google.com</span>
-                            <h6><a class="content_ad2" href="https://www.yu.ac.kr/">여기가 구글인데 여기가 구글인데여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데  여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가 구글인데 여기가  </a></h6>
+                            <h6><a class="content_ad2" href="https://www.yu.ac.kr/">구글은 구글 검색을 중심으로 스마트폰 운영체제인 안드로이드와 유튜브 사업, 클라우드 사업을 하는 미국의 기업이다. 다양한 구글 서비스들과 함께 '전 세계의 모든 정보들을 체계화하여 모든 사용자가 유익하게 사용할 수 있도록 한다'라는 사명을 가지고 사업을 하고 있다.</a></h6>
                         </div>
                         <div id="main_ad">
                             <span><a href="https://naver.com">네이버</a></span>
                             &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                             <span style="font-size: 13px;">https://naver.com</span>
-                            <h6><a class="content_ad2" href="https://yu.ac.kr/">ㅋㅋ 여기는 네이버인데요. ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.ㅋㅋ 여기는 네이버인데요.</a></h6>
+                            <h6><a class="content_ad2" href="https://yu.ac.kr/">네이버는 1999년 6월에 출시된 대한민국의 포털사이트이다.</a></h6>
                         </div>
+                    </div>
+                    <div class = sidebanner>
+                        <img src="img/ad.jpeg" alt="광고">
                     </div>
                     <div>
                         <i class="blackbar"></i>
@@ -287,28 +349,18 @@
                         </ul>
                     </div>
 
-                <!--
-                <div class="right_bar">
-
-                </div>
-
-                <div class="ad_bar">
-
-                </div>
--->
             </div>
         </article>
         <footer>
             <div class="footer">
                 <div class="footer_search_bar">
-                  시발 존나 피곤해 개씨발 <br>
-                  생각보다 존나 어렵네 시발 <br>
-                  새벽 5시반에 이지랄하고있네 개시발 <br>
-                  씨발 개시발 존나 피곤해 씨발 개시발 <br>
-                  거의 다만들었다 씨발 <br>
-                  광고 창만 만들면 되는데 모르겠노 시발 <br>
-                  잔다 bye
-                   
+                   <div>
+                       <img class ="contentuppic" src="img/up.gif">
+                       <img class="contentpic" src="img/content1.jpg" alt="">
+                       <span class="feed">무도가 하늘이 돕는 예능이었던 이유...mp4[97]</span>
+                       <span class="contenttype"> 유머 - 움짤</span>
+                       <span class="writer">1 분 전 / 우재민</span>
+                   </div>
                     <div class="line">
                         <input id="footer_search_btn" type="text">
                         <select id="select_btn" name="color">
