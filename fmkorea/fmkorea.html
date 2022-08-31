@@ -2,10 +2,10 @@
 <html lang="kr">
 
 <head>
-  <meta charset="utf-8"> 
-   <title>
-       우재민의 코리아
-   </title>
+    <meta charset="utf-8">
+    <title>
+        우재민의 코리아
+    </title>
     <style>
         * {
             list-style: none;
@@ -14,13 +14,14 @@
             margin: 0;
             padding: 0px;
         }
+
         #wrap {
             width: 1050px;
             margin: 0 auto;
-    
+
         }
-        
-        .wrapper{
+
+        .wrapper {
             position: relative;
         }
 
@@ -33,7 +34,7 @@
         .top p {
             margin-right: 120px;
         }
-        
+
         .loginbox {
             width: 80px;
             height: 18px;
@@ -44,9 +45,9 @@
             margin-left: 5px;
             margin-right: 5px;
         }
-        
+
         .button {
-            width:50px;
+            width: 50px;
             background: #fff;
             border-radius: 7px;
             font-size: 12px;
@@ -90,11 +91,12 @@
             background-color: white;
             border-radius: 5px;
         }
-        
+
         #article {
             position: relative;
             left:
         }
+
         #banner {
             height: 35px;
             background: url(img/banner.png) no-repeat;
@@ -225,50 +227,69 @@
             border: 1px solid #DCDCDC;
             background-color: #FFFAFA
         }
-        
-        .contentpic{
-            width:11%;
+
+        .contentpic {
+            width: 11%;
             margin-bottom: -3px;
             margin-left: -10px;
+            display: inline-block;
         }
-        
-        .contentuppic{
+
+        .contentuppic {
             margin-left: -6px;
             margin-right: 10px;
         }
-        
+
         .feed {
+/*
             position: relative;
-            top:-46px;
+            top: -46px;
+*/
             font-size: 19px;
-            color:blue;
-            font-style: oblique;
+            color: blue;
+            height: 30px;
+/*            font-style: oblique;*/
         }
-        .contenttype{
-            position: relative;
-            left:-400px;
-            top:-24px;
+
+        .contenttype {
             font-size: 13px;
             color: blue;
-            font-family: fantasy;
+            height: 22px;
         }
-        .writer{
-            position: relative;
-            left: -466px;
+
+        .writer {
             font-size: 13px;
-            font-family: fantasy;
+            height: 24px;
         }
-        .line{
+
+        .line {
             border-top: 1px solid green;
         }
-        
-        .sidebanner{
+
+        #sector {}
+
+        .sidebanner {
             font-size: 12px;
-            width:190px;
+            width: 190px;
             display: flex;
             position: absolute;
             left: 890px;
             top: 0px;
+        }
+
+        .sector_content {
+            height: 80px;
+            margin-bottom: 0.3rem;
+        }
+
+        .content_info{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top:-80px;
+            left:140px;
+            width:600px;
+            height: 17px;
         }
     </style>
 </head>
@@ -313,54 +334,140 @@
 
         <article>
             <div class="wrapper">
-                    <div class="content">
-                        <div class="article_ad">
-                            <span>파워링크[광고]</span>
-                            <span>등록하기</span>
-                            
-                        </div>
-                        <div id="main_ad">
-                            <span><a href="https://google.com">구글</a></span>
-                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                            <span style="font-size: 13px;">https://google.com</span>
-                            <h6><a class="content_ad2" href="https://www.yu.ac.kr/">구글은 구글 검색을 중심으로 스마트폰 운영체제인 안드로이드와 유튜브 사업, 클라우드 사업을 하는 미국의 기업이다. 다양한 구글 서비스들과 함께 '전 세계의 모든 정보들을 체계화하여 모든 사용자가 유익하게 사용할 수 있도록 한다'라는 사명을 가지고 사업을 하고 있다.</a></h6>
-                        </div>
-                        <div id="main_ad">
-                            <span><a href="https://naver.com">네이버</a></span>
-                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                            <span style="font-size: 13px;">https://naver.com</span>
-                            <h6><a class="content_ad2" href="https://yu.ac.kr/">네이버는 1999년 6월에 출시된 대한민국의 포털사이트이다.</a></h6>
-                        </div>
-                    </div>
-                    <div class = sidebanner>
-                        <img src="img/ad.jpeg" alt="광고">
-                    </div>
-                    <div>
-                        <i class="blackbar"></i>
-                        <h1 class="board">부랄 터진 게시판</h1>
-                    </div>
+                <div class="content">
+                    <div class="article_ad">
+                        <span>파워링크[광고]</span>
+                        <span>등록하기</span>
 
-                    <div class="board_bar">
-                        <span class="board_in_box"><a href="https://www.fmkorea.com/best" style="color: black;">홈</a></span>
-                        <ul>
-                            <li class="board_bar_list"><a href="https://www.fmkorea.com/best" style="color: black;">최신</a></li>
-                            <li class="board_bar_list"><a href="https://www.fmkorea.com/best2" style="color: black;">화제</a></li>
-                            <li class="board_bar_list"><a href="https://www.fmkorea.com/index.php?mid=politics&sort_index=pop&order_type=desc" style="color: black;">정치</a></li>
-                        </ul>
                     </div>
+                    <div id="main_ad">
+                        <span><a href="https://google.com">구글</a></span>
+                        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                        <span style="font-size: 13px;">https://google.com</span>
+                        <h6><a class="content_ad2" href="https://www.yu.ac.kr/">구글은 구글 검색을 중심으로 스마트폰 운영체제인 안드로이드와 유튜브 사업, 클라우드 사업을 하는 미국의 기업이다. 다양한 구글 서비스들과 함께 '전 세계의 모든 정보들을 체계화하여 모든 사용자가 유익하게 사용할 수 있도록 한다'라는 사명을 가지고 사업을 하고 있다.</a></h6>
+                    </div>
+                    <div id="main_ad">
+                        <span><a href="https://naver.com">네이버</a></span>
+                        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                        <span style="font-size: 13px;">https://naver.com</span>
+                        <h6><a class="content_ad2" href="https://yu.ac.kr/">네이버는 1999년 6월에 출시된 대한민국의 포털사이트이다.</a></h6>
+                    </div>
+                </div>
+                <div class=sidebanner>
+                    <img src="img/ad.jpeg">
+                </div>
+                <div>
+                    <i class="blackbar"></i>
+                    <h1 class="board">부랄 터진 게시판</h1>
+                </div>
+
+                <div class="board_bar">
+                    <span class="board_in_box"><a href="https://www.fmkorea.com/best" style="color: black;">홈</a></span>
+                    <ul>
+                        <li class="board_bar_list"><a href="https://www.fmkorea.com/best" style="color: black;">최신</a></li>
+                        <li class="board_bar_list"><a href="https://www.fmkorea.com/best2" style="color: black;">화제</a></li>
+                        <li class="board_bar_list"><a href="https://www.fmkorea.com/index.php?mid=politics&sort_index=pop&order_type=desc" style="color: black;">정치</a></li>
+                    </ul>
+                </div>
 
             </div>
         </article>
         <footer>
             <div class="footer">
                 <div class="footer_search_bar">
-                   <div>
-                       <img class ="contentuppic" src="img/up.gif">
-                       <img class="contentpic" src="img/content1.jpg" alt="">
-                       <span class="feed">무도가 하늘이 돕는 예능이었던 이유...mp4[97]</span>
-                       <span class="contenttype"> 유머 - 움짤</span>
-                       <span class="writer">1 분 전 / 우재민</span>
-                   </div>
+                    <sector class="board_content">
+                        <div class="sector_content">
+                            <img class="contentuppic" src="img/up.gif">
+                            <img class="contentpic" src="img/content1.jpg" alt="">
+                            <div class="content_info">
+                                <span class="feed">무도가 하늘이 돕는 예능이었던 이유...mp4 [97]</span>
+                                <span class="contenttype"> 유머 - 움짤</span>
+                                <span class="writer">3 분 전 / 유재석</span>
+                            </div>
+                        </div>
+                        <div class="sector_content">
+                            <img class="contentuppic" src="img/up.gif">
+                            <img class="contentpic" src="https://image.fmkorea.com/filesn/cache/thumbnails/20220831/426/114/977/004/70x50.crop.jpg?c=20220831201529" alt="">
+                            <div class="content_info">
+                                <span class="feed"><a href="https://www.fmkorea.com/best/4977114426">[키커] 뮌헨에서 가장 많이 뛴 선수 1~10위 [70]</a></span>
+                                <span class="contenttype"> 축구소식 - 번역기사</span>
+                                <span class="writer">30 분 전 / 레반도프스키</span>
+                            </div>
+                        </div>
+                        <div class="sector_content">
+                            <img class="contentuppic" src="img/up.gif">
+                            <img class="contentpic" src="https://image.fmkorea.com/filesn/cache/thumbnails/20220901/520/868/977/004/70x50.crop.jpg?c=20220901001916" alt="">
+                            <div class="content_info">
+                                <span class="feed"><a href="https://www.fmkorea.com/best/4977868520">리버풀과 이집트의 왕, 모하메드 살라 각종 스탯 및 개인기록 [80]</a></span>
+                                <span class="contenttype"> 해외축구 - 정보/SNS</span>
+                                <span class="writer">1 시간 전 / 살라</span>
+                            </div>
+                        </div>
+                        <div class="sector_content">
+                            <img class="contentuppic" src="img/up.gif">
+                            <img class="contentpic" src="https://image.fmkorea.com/filesn/cache/thumbnails/20220831/379/864/976/004/70x50.crop.jpg?c=20220831223600" alt="">
+                            <div class="content_info">
+                                <span class="feed"><a href="https://www.fmkorea.com/best/4976864379">빙하기 미국에 살았던 역사상 최강의 괴물곰 [97]</a></span>
+                                <span class="contenttype"> 미스터리 - 자연/생물</span>
+                                <span class="writer">1 시간 전 / 북극곰</span>
+                            </div>
+                        </div>
+                        <div class="sector_content">
+                            <img class="contentuppic" src="img/up.gif">
+                            <img class="contentpic" src="https://image.fmkorea.com/filesn/cache/thumbnails/20220831/722/076/977/004/70x50.crop.jpg?c=20220831195852" alt="">
+                            <div class="content_info">
+                                <span class="feed">ufc 고수들의 수싸움.gif [42]</span>
+                                <span class="contenttype"> 유머 - 움짤</span>
+                                <span class="writer">2 시간 전 / 정찬성</span>
+                            </div>
+                        </div>
+                        <div class="sector_content">
+                            <img class="contentuppic" src="img/up.gif">
+                            <img class="contentpic" src="https://image.fmkorea.com/filesn/cache/thumbnails/20220831/718/232/977/004/70x50.crop.jpg?c=20220831204331" alt="">
+                            <div class="content_info">
+                                <span class="feed"><a href="https://www.fmkorea.com/best/4977232718"></a>여권 검사받는 블랙핑크 지수.gif [262]</span>
+                                <span class="contenttype"> 유머 - 움짤</span>
+                                <span class="writer">3 시간 전 / 지수</span>
+                            </div>
+                        </div>
+                        <div class="sector_content">
+                            <img class="contentuppic" src="img/up.gif">
+                            <img class="contentpic" src="https://image.fmkorea.com/filesn/cache/thumbnails/20220831/183/922/977/004/70x50.crop.jpg?c=20220831235538" alt="">
+                            <div class="content_info">
+                                <span class="feed"><a href="https://www.fmkorea.com/best/4977922183">태풍 경로 레전드 모음 [88]</a></span>
+                                <span class="contenttype"> 유머 - 움짤</span>
+                                <span class="writer">4 시간 전 / 기상청</span>
+                            </div>
+                        </div>
+                        <div class="sector_content">
+                            <img class="contentuppic" src="img/up.gif">
+                            <img class="contentpic" src="https://image.fmkorea.com/filesn/cache/thumbnails/20220831/620/354/977/004/70x50.crop.jpg?c=20220831211615" alt="">
+                            <div class="content_info">
+                                <span class="feed"><a href="https://www.fmkorea.com/best/4977354620">강도에게 폭행당한 오바메양, 턱 골절 [216]</a></span>
+                                <span class="contenttype"> 축구소식 - 번역기사</span>
+                                <span class="writer">5 시간 전 / 오바메양</span>
+                            </div>
+                        </div>
+                        <div class="sector_content">
+                            <img class="contentuppic" src="img/up.gif">
+                            <img class="contentpic" src="https://image.fmkorea.com/filesn/cache/thumbnails/20220831/090/453/977/004/70x50.crop.jpg?c=20220831213942" alt="">
+                            <div class="content_info">
+                                <span class="feed"><a href="https://www.fmkorea.com/best/4977453090">이승우 "계속 춤추고 싶다".jpg [241]</a></span>
+                                <span class="contenttype"> 국내축구 - 사진/영상 </span>
+                                <span class="writer">6 시간 전 / 이승우</span>
+                            </div>
+                        </div>
+                        <div class="sector_content">
+                            <img class="contentuppic" src="img/up.gif">
+                            <img class="contentpic" src="https://image.fmkorea.com/filesn/cache/thumbnails/20220831/385/540/977/004/70x50.crop.jpg?c=20220831223811" alt="">
+                            <div class="content_info">
+                                <span class="feed"><a href="https://www.fmkorea.com/index.php?mid=best&listStyle=webzine&document_srl=4977540385&search_keyword=%EC%9D%B4%EA%B0%95%EC%9D%B8&search_target=title_content&page=1">[공홈] 라리가 8월 이달의 선수 후보 (이강인 포함)[126]</a></span>
+                                <span class="contenttype"> 축구소식 - 정보</span>
+                                <span class="writer">6 시간 전 / 이강인</span>
+                            </div>
+                        </div>
+                      
+                    </sector>
                     <div class="line">
                         <input id="footer_search_btn" type="text">
                         <select id="select_btn" name="color">
@@ -392,5 +499,4 @@
             </div>
         </footer>
     </div>
-</body>
-</html>
+</body></html>
